@@ -15,6 +15,8 @@ def command(pixel):
     for x, y in commands.items():
         if pixel == x:
             print(y)
+        else:
+            print("Unrecognized Command")
 
 im = Image.open("image.png")
 pix = im.load()
