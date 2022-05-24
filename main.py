@@ -14,9 +14,10 @@ def command(pixel):
     pixel = str(pixel)
     for x, y in commands.items():
         if pixel == x:
-            print(y)
-        else:
-            print("Unrecognized Command")
+            try:
+                call(y)
+            except:
+                print(y)
 
 im = Image.open("image.png")
 pix = im.load()
