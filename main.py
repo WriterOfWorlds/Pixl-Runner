@@ -1,4 +1,5 @@
 from PIL import Image
+from call import call
 
 def command(pixel):
     commands = {
